@@ -32,7 +32,7 @@ const quesbox=document.getElementById("queBox");
 const loadQuestion =()=>{
    const data=question[index];
    console.log(data);
-   quesbox.innerHTML=data.que
+   quesbox.innerHTML=data.que;
 
 }
 loadQuestion();
