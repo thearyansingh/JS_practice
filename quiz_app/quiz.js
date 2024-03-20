@@ -28,11 +28,62 @@ const question = [
     
 ]
 let index=0;
-const quesbox=document.getElementById("queBox");
+let total=question.length;
+let right=0;
+let wrong=0;
+const quesbox=document.getElementById('queBox');
+const optionsInputs=document.querySelectorAll('.options')
 const loadQuestion =()=>{
+    if(index===total){
+        return endQuiz();
+    }
+    reset();
    const data=question[index];
-   console.log(data);
-   quesbox.innerHTML=data.que;
+ 
+   quesbox.innerHTML=`${index+1})${data.que}`;
+   optionsInputs[0].nextElementSibling.innerText=data.a;
+   optionsInputs[1].nextElementSibling.innerText=data.b;
+   optionsInputs[2].nextElementSibling.innerText=data.c;
+   optionsInputs[3].nextElementSibling.innerText=data.d;
 
 }
-loadQuestion();
+const submitQuiz=()=>{            // for submit button
+    const data=question[index];
+    const answer=getAnswer();
+
+    if(answer == data.correct){
+  right++;
+    }
+    else{
+        wrong++;
+    } 
+    index++;
+    loadQuestion();
+    return;
+}
+const getAnswer=()=>{          
+    let ans;
+    optionsInputs.forEach(
+        (input)=>{
+            if(input.checked){
+            ans= input.value;
+            }
+
+        }
+    )
+    return ans;
+}
+const reset=()=>{
+optionsInputs.forEach(
+    (input)=>{
+  input.checked=false;
+    }
+)
+}
+const endQuiz=()=>{
+    document.getElementById('queBox').innerHTML=`<h3> thankyou for playing in Quiz </h3>
+    <h2>${right}/${total} are correct</h2>`
+    
+}
+loadQuestion(index);
+
