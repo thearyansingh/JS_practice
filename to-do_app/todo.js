@@ -2,7 +2,7 @@ const item=document.querySelector("#item")
 const todoBox=document.querySelector("#todo")
 
 item.addEventListener(
-    "keyup",
+    "keyup",// to get the output from ke
     function(event){
         if(event.key=="Enter"){
           addToDo(this.value)
