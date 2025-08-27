@@ -1,0 +1,141 @@
+📘 Core JavaScript Topics to Prepare
+✅ 1. Basics & Syntax
+var, let, const (scope, hoisting)
+
+Data types (primitive & reference)
+
+Type coercion (implicit & explicit conversion)
+
+typeof operator
+
+Template literals (`Hello ${name}`)
+
+✅ 2. Variables & Scope
+Global vs local scope
+
+Function scope vs block scope
+
+Hoisting (variables and functions)
+
+✅ 3. Functions
+Function declaration vs expression
+
+Arrow functions
+
+Callback functions
+
+Higher-order functions
+
+Anonymous functions
+
+setTimeout, setInterval
+
+Immediately Invoked Function Expressions (IIFE)
+
+✅ 4. Arrays
+Declaration and access
+
+Array methods: map(), filter(), reduce(), forEach(), find(), some(), every(), includes()
+
+push, pop, shift, unshift, splice, slice
+
+✅ 5. Objects
+Object creation ({} vs new Object())
+
+Dot vs bracket notation
+
+Nested objects
+
+Object methods: Object.keys(), Object.values(), Object.entries()
+
+Shallow vs deep copy
+
+✅ 6. Loops & Conditionals
+for, while, do-while
+
+for...of vs for...in
+
+if/else, switch, ternary operator
+
+✅ 7. ES6+ Features
+let, const, arrow functions
+
+Destructuring (arrays and objects)
+
+Spread/rest operator (...)
+
+Default parameters
+
+Template literals
+
+Optional chaining (?.)
+
+Nullish coalescing (??)
+
+Modules: import / export
+
+✅ 8. Asynchronous JavaScript
+Synchronous vs Asynchronous
+
+Callback Hell
+
+Promises: then, catch, finally
+
+async/await
+
+fetch() API basics
+
+Error handling with try...catch
+
+✅ 9. DOM Manipulation
+document.getElementById, querySelector
+
+Changing text, HTML, styles
+
+Creating/removing elements
+
+Event listeners (click, input, etc.)
+
+Event bubbling & delegation
+
+✅ 10. Event Handling
+addEventListener()
+
+Event object (e.target, e.preventDefault)
+
+Debouncing & throttling (basic understanding)
+
+✅ 11. Closures
+What is a closure?
+
+Real-world examples (e.g., private variables, setTimeout inside loop)
+
+✅ 12. this Keyword
+Global vs function vs object context
+
+Arrow function vs regular function
+
+call, apply, bind
+
+✅ 13. Prototypes & Inheritance
+Prototype chain
+
+Inheritance using __proto__
+
+Classes in JS (ES6)
+
+✅ 14. LocalStorage & SessionStorage
+Storing and retrieving data
+
+Difference between both
+
+✅ 15. Miscellaneous
+== vs ===
+
+NaN, undefined, null
+
+typeof null (quirk)
+
+Memory management basics
+
+Event loop (call stack, microtasks, macrotasks)
